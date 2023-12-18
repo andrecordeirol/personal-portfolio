@@ -30,8 +30,6 @@ body {
     text-decoration: none;
 }
 
-
-
 .apresentacao {
     padding: 5% 15%;
     display: flex;
@@ -118,4 +116,48 @@ body {
 .rodape:hover {
     background-color: rgb(40, 230, 270);
     
+}
+
+
+.curriculo_texto {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+.curriculo_titulo_subtitulo {
+    font-size: 18px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.curriculo_titulo {
+    font-size: 22px;
+    font-family: 'Krona One', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.curriculo {
+    gap: 10px;
+    padding-left: 100px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 10px;
+    gap: 10px;
+}
+
+.icone_curriculo {
+    width: 30px;
+    height: auto;
+    /* flex-shrink: 0; */
 }
