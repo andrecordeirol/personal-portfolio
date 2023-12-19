@@ -133,31 +133,56 @@ body {
     padding-top: 5px;
 }
 
+.curriculo_titulo_subtitulo_2 {
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 .curriculo_titulo {
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Krona One', sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+.curriculo_titulo_logo {
+    display: flex;
+}
+
 .curriculo {
-    gap: 10px;
-    padding-left: 100px;   
+    flex-direction: column;
+}
+
+.curriculo_todo {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 100px;   
 }
 
 .linha {
-    display: flex;
+    /* display: flex; */
     width: 100%;
     border-bottom: 1px solid #f6f6f6;
     padding: 10px;
+    padding-bottom: 10px;
     gap: 10px;
 }
 
 .icone_curriculo {
-    width: 30px;
-    height: auto;
-    /* flex-shrink: 0; */
+    width: 35px;
+    height: 35px;
+    padding-left: 100px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.main_class {
+    padding: 5% 15%;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+
 }
