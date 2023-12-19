@@ -1,5 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #222831;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+    --cor-hover: #393E46;
+
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
 
 * {
     margin: 0;
@@ -7,14 +17,13 @@
 }
 
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #071e22;
-    color: #cbd2d0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
-    padding: 2% 0 0 15% ;       
+    padding: 2% 0 0 15%;
 }
 
 .cabecalho__menu {
@@ -23,10 +32,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--cor-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -46,7 +55,7 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque {
@@ -55,12 +64,12 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 
 .apresentacao__links__subtitulo {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -77,21 +86,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4FD; 
+    border: 2px solid var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
-    
+    background-color: var(--cor-hover);
 }
 
 .foto {
@@ -104,30 +112,29 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
-    color: black;
+    color: var(--cor-primaria);
     font-weight: 400;
     padding: 24px;
-    
-    background-color: #22D4FD;
+
+    background-color: var(--cor-terciaria);
 }
 
 .rodape:hover {
-    background-color: rgb(40, 230, 270);
-    
-}
+    background-color: var(--cor-terciaria);
 
+}
 
 .curriculo_texto {
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     text-align: justify;
 }
 
 .curriculo_titulo_subtitulo {
     font-size: 18px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -135,7 +142,7 @@ body {
 
 .curriculo_titulo_subtitulo_2 {
     font-size: 20px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: bold;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -143,7 +150,7 @@ body {
 
 .curriculo_titulo {
     font-size: 24px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -160,13 +167,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-left: 100px;   
+    padding-left: 100px;
 }
 
 .linha {
-    /* display: flex; */
     width: 100%;
-    border-bottom: 1px solid #f6f6f6;
+    border-bottom: 1px solid var(--cor-secundaria);
     padding: 10px;
     padding-bottom: 10px;
     gap: 10px;
@@ -182,7 +188,26 @@ body {
 
 .main_class {
     padding: 5% 15%;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
+}
 
+.sobremim {
+    display: flex;
+    padding: 5% 15%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sobremim_imagem {
+    display: flex;
+}
+
+.sobremim_imagem_imagem {
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.sobremim_body {
+    height: 100vh;
 }
